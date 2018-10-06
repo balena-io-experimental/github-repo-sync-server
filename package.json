@@ -5,6 +5,9 @@
         "name": "Kakhaber Bazerashvili",
         "email": "kaxabernet@gmail.com"
     },
+    "scripts": {
+        "start": "node index"
+    },
     "main": "./index.js",
     "version": "0.0.1",
     "dependencies": {
