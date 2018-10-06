@@ -33,7 +33,7 @@ webhookHandler.on('push', function (e) {
         sourceRepoUrl,
         targetRepoUrl,
         process.env.SSH_PUBLIC_KEY,
-        process.env.SSH_PRIVATE_KEY,
+        process.env.SSH_KEY,
         process.env.SSH_KEY_PASSPHRASE,
         ref
     ).catch(function (err) {
