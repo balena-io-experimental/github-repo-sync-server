@@ -35,7 +35,8 @@ webhookHandler.on('push', function (e) {
         process.env.SSH_PUBLIC_KEY,
         process.env.SSH_PRIVATE_KEY,
         process.env.SSH_KEY_PASSPHRASE,
-        ref).catch(function (err) {
-        console.log('Error syncing remote repo.')
+        ref
+    ).catch(function (err) {
+        console.log('Error syncing remote repo:', err);
     });
 });
