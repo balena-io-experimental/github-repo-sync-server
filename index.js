@@ -29,7 +29,13 @@ webhookHandler.on('push', function (e) {
     var ref = e.payload.ref;
     var sourceRepoUrl = e.payload.repository.ssh_url;
 
-    updateTargetRepo(sourceRepoUrl, targetRepoUrl, ref).catch(function (err) {
+    updateTargetRepo(
+        sourceRepoUrl,
+        targetRepoUrl,
+        process.env.SSH_PUBLIC_KEY,
+        process.env.SSH_PRIVATE_KEY,
+        process.env.SSH_KEY_PASSPHRASE,
+        ref).catch(function (err) {
         console.log('Error syncing remote repo.')
     });
 });
