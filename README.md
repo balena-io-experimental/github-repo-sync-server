@@ -1,7 +1,7 @@
-## Setting github
+# Setting github
 1. ...
 
-## Setting heroku
+# Setting heroku
 1. Set secret environment variable which you set on github:
 
 ```bash
